@@ -10,19 +10,19 @@
 
 <body>
     <header>
-        <h1>Warframe</h1>
+        <h1><a href="https://www.warframe.com/uk" style="text-decoration: none; color: #f0c808; font-weight: bold;">Warframe</h1>
         <nav>
             <a href="https://store.steampowered.com/agecheck/app/230410/">Грати безкоштовно</a>
             <a href="news.html" class="active">Новини</a>
-            <a href="">Про нас</a>
+            <a href="pronas.html" class="active">Контакти</a>
         </nav>
     </header>
 
     <main>
         <section class="новини">
             <article class="новина">
-                <h2>Цибулевий набір</h2>
-                <p>«Теннокей 2025» вже доступний!</p>
+                <h2><a href="https://www.warframe.com/uk/tennocon/packs" style="text-decoration: none; color: #f0c808; font-weight: bold;">Цифровий набір</h2>
+                <p><a href="https://www.warframe.com/uk/tennocon" style="text-decoration: none; color: #f0c808; font-weight: bold;">«Теннокей 2025» вже доступний!</p>
             </article>
 
             <article class="новина">
@@ -30,8 +30,9 @@
                 <p>З'явиться 21 травня</p>
             </article>
 
-            <div class="більше-новин">
-                <a href="news"></a><h3>Більше новин</a></h3>
+            <div class="більше-новин" div id="moreNewsBtn">
+                <div id="moreNewsBtn2">
+                <a href="news.html" style="text-decoration: none; color: #f0c808; font-weight: bold;">Більше новин</a>
             </div>
         </section>
 
@@ -39,15 +40,54 @@
             <h2>УДАРНИКИ <strong>РЕЙМУ</strong></h2>
 
             <article class="премєра">
+                <div id="moreNewsBtn1">
                 <h3>Лавос-прайм</h3>
                 <p>Отримайте доступ до нових праймових варфреймів з їхньою зброєю, обладнанням та іншим! З
                     Прайм-доступом ви миттєво отримуєте найкращих бійців, створених Орокінами.</p>
-                <button><a href="https://www.warframe.com/uk/prime-access">Придбати</button></a>
+                <button><a href="https://www.warframe.com/uk/prime-access"
+                        style="text-decoration: none; color: black; font-weight: bold">Придбати</button></a>
+                </div>
             </article>
+
+            <script>
+                        document.getElementById("moreNewsBtn").addEventListener("click", function (event) {
+                            event.preventDefault();
+                            alert("Загрузка...");
+                            setTimeout(function () {
+                                window.location.href = "news.html";
+                            }, 200);
+                        });
+
+                        document.getElementById("moreNewsBtn1").addEventListener("click", function (event) {
+                            event.preventDefault();
+                            alert("Загрузка...");
+                            setTimeout(function () {
+                                window.location.href = "https://www.warframe.com/uk/prime-access";
+                            }, 200);
+                        });
+
+                        document.getElementById("moreNewsBtn2").addEventListener("click", function (event) {
+                            event.preventDefault();
+                            alert("Ви бажаєте перейти на сторінку Більше-Новин?");
+                            setTimeout(function () {
+                                window.location.href = "news.html";
+                            }, 200);
+                        });
+
+                        document.getElementById("moreNewsBtn3").addEventListener("click", function (event) {
+                            event.preventDefault();
+                            alert("Загрузка...");
+                            setTimeout(function () {
+                                window.location.href = "news.html";
+                            }, 200);
+                        });
+
+            </script>
+
     </main>
 
     <footer>
-    
+
     </footer>
 </body>
 
