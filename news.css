@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #3a3a3a;
+}
+
+header h1 {
+    color: #f0c808;
+    font-size: 2.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f0c808;
+}
+
+main {
+    padding: 2rem;
+}
+
+.новини {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #3a3a3a;
+    padding-bottom: 2rem;
+}
+
+.новина {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #f0c808;
+}
+
+.новина h2 {
+    color: #f0c808;
+    margin-bottom: 0.5rem;
+}
+
+.більше-новин {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.більше-новин h3 {
+    color: #f0c808;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.головне {
+    margin-top: 2rem;
+}
+
+.головне h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.головне h2 strong {
+    color: #f0c808;
+}
+
+.премєра {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.премєра h3 {
+    color: #f0c808;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.премєра p {
+    margin-bottom: 1.5rem;
+}
+
+button {
+    background-color: #f0c808;
+    color: #1a1a1a;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+ 
+h3 {
+    text-align: center;
+}
