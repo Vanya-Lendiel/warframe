@@ -41,6 +41,55 @@ main {
     padding: 2rem;
 }
 
+.новини {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #3a3a3a;
+    padding-bottom: 2rem;
+}
+
+.новина {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #f0c808;
+    
+}
+
+.новина h2 {
+    color: #f0c808;
+    margin-bottom: 0.5rem;
+}
+
+.більше-новин {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.більше-новин h3 {
+    color: #f0c808;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.головне {
+    margin-top: 2rem;
+}
+
+.головне h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.головне h2 strong {
+    color: #f0c808;
+}
+
 .премєра {
     background-color: #1a1a1a;
     padding: 2rem;
@@ -49,16 +98,22 @@ main {
     margin: 0 auto;
 }
 
-.новина {
-    background-color: #1a1a1a;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #f0c808;
+.премєра h3 {
+    color: #f0c808;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.н1 {
-    background-color: #1a1a1a;
-    padding: 2.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #f0c808;
+.премєра p {
+    margin-bottom: 1.5rem;
 }
+
+button {
+    background-color: #f0c808;
+    color: #1a1a1a;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
